@@ -98,8 +98,7 @@ class Detector:
         """
         try:
             with open(
-                "/proc/device-tree/compatible", "r", encoding="utf-8"
-            ) as model_file:
+                "/proc/device-tree/compatible", "r", encoding="utf-8") as model_file:
                 return model_file.read()
         except FileNotFoundError:
             pass
